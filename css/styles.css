@@ -1,0 +1,240 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --background-hero-footer: #2f303a;
+  --h-color: #212121;
+  --text-color: #757575;
+  --background-team: #f5f4fa;
+  --logo-item-header: #000000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+body {
+  font-family: var(--main-font);
+  background: var(--background-color);
+  font-size: 16px;
+}
+
+/* BUTTONS */
+.modal-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
+
+.filters-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+  cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* BUTTONS END */
+
+/* HEADER */
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.email-link,
+.phone-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.email-link:focus,
+.email-link:hover,
+.phone-link:focus,
+.phone-link:hover {
+  color: var(--accent-color);
+}
+
+/* END HEADER */
+
+/* HERO */
+.hero {
+  background-color: var(--background-hero-footer);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+/* END HERO */
+
+/* ADVANTAGES */
+.advantages-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--h-color);
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* ADVANTAGES END */
+
+/* OCCUPATION */
+
+.occupation-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+}
+
+/* OCCUPATION END */
+
+/* TEAM */
+.team {
+  background-color: var(--background-team);
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+}
+
+.team-list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+}
+
+.team-list-occupation {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* TEAM END */
+
+/* LOGO */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-item-header {
+  color: var(--logo-item-header);
+}
+
+.logo-item-footer {
+  color: var(--background-color);
+}
+/* LOGO END */
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--background-hero-footer);
+}
+
+.footer-direct-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-direct-address:hover,
+.footer-direct-address:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+/* FOOTER END */
+
+/* PROJECTS */
+
+.projects-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--h-color);
+}
+
+.projects-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* PROJECTS END */
