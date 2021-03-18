@@ -10,6 +10,22 @@
   --logo-item-header: #000000;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -28,14 +44,36 @@ img {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 body {
   font-family: var(--main-font);
   background: var(--background-color);
   font-size: 16px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* BUTTONS */
+
 .modal-btn {
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  min-width: 200px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -63,6 +101,28 @@ body {
 /* BUTTONS END */
 
 /* HEADER */
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
 
 .navigation-link {
   font-weight: 500;
@@ -78,6 +138,15 @@ body {
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.phone-link {
+  margin-left: 50px;
 }
 
 .email-link,
@@ -98,22 +167,42 @@ body {
 /* END HEADER */
 
 /* HERO */
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 .hero {
   background-color: var(--background-hero-footer);
 }
 
 .hero-title {
+  margin: 0 auto;
+  max-width: 700px;
+  max-height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 /* END HERO */
 
 /* ADVANTAGES */
+
+.container .advantages-list {
+  display: flex;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
 .advantages-title {
   font-weight: bold;
   font-size: 14px;
@@ -134,7 +223,25 @@ body {
 
 /* OCCUPATION */
 
+.occupation .container {
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 95px;
+}
+
+.occupation-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.occupation-list {
+  display: flex;
+  flex-basis: (100%\3 -30px);
+}
+
 .occupation-title {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -145,11 +252,34 @@ body {
 /* OCCUPATION END */
 
 /* TEAM */
+
 .team {
   background-color: var(--background-team);
 }
 
+.team-list-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.team .container {
+  margin-top: -50px;
+  margin-left: -30px;
+}
+
+.team-list-item {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.team-list {
+  display: flex;
+  flex-basis: (100%\4 -30px);
+}
+
 .team-title {
+  text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -158,6 +288,7 @@ body {
 }
 
 .team-list-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -171,9 +302,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 /* TEAM END */
 
 /* LOGO */
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: bold;
@@ -183,6 +316,10 @@ body {
   color: var(--accent-color);
 }
 
+.logo {
+  margin-right: 90px;
+}
+
 .logo-item-header {
   color: var(--logo-item-header);
 }
@@ -190,6 +327,7 @@ body {
 .logo-item-footer {
   color: var(--background-color);
 }
+
 /* LOGO END */
 
 /* FOOTER */
@@ -218,6 +356,7 @@ body {
 .footer-link:focus {
   color: var(--accent-color);
 }
+
 /* FOOTER END */
 
 /* PROJECTS */
