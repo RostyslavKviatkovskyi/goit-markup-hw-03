@@ -8,6 +8,11 @@
   --text-color: #757575;
   --background-team: #f5f4fa;
   --logo-item-header: #000000;
+  --margin-top: 95px;
+  --margin-bottom: 95px;
+  --margin-bottom-headers-buttons: 50px;
+  --padding-top: 95px;
+  --padding-bottom: 95px;
 }
 
 h1,
@@ -70,6 +75,20 @@ body {
 
 /* BUTTONS */
 
+.filters-list {
+  display: flex;
+  margin-left: 280px;
+}
+
+.filters .container {
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom-headers-buttons);
+}
+
+.filters-items:not(:last-child) {
+  margin-right: 30px;
+}
+
 .modal-btn {
   padding: 10px 32px;
   margin-bottom: 200px;
@@ -81,6 +100,7 @@ body {
   color: var(--background-color);
   cursor: pointer;
   background-color: var(--accent-color);
+  border: none;
 }
 
 .filters-btn {
@@ -90,6 +110,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--h-color);
   cursor: pointer;
+  border: none;
 }
 
 .filters-btn:hover,
@@ -197,10 +218,19 @@ body {
 
 /* ADVANTAGES */
 
-.container .advantages-list {
+.advantages .container {
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom);
+}
+
+.advantages-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.advantages-list {
   display: flex;
-  margin-top: 95px;
-  margin-bottom: 95px;
+  flex-basis: calc(100%\4 -30px);
 }
 
 .advantages-title {
@@ -226,7 +256,7 @@ body {
 .occupation .container {
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 95px;
+  margin-bottom: var(--margin-bottom);
 }
 
 .occupation-item {
@@ -240,7 +270,7 @@ body {
 }
 
 .occupation-title {
-  margin-bottom: 50px;
+  margin-bottom: var(--margin-bottom-headers-buttons);
   text-align: center;
   font-weight: bold;
   font-size: 36px;
@@ -264,12 +294,12 @@ body {
 }
 
 .team .container {
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: -30px;
 }
 
 .team-list-item {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 
@@ -279,6 +309,8 @@ body {
 }
 
 .team-title {
+  padding-top: var(--padding-top);
+  padding-bottom: 50px;
   text-align: center;
   font-weight: bold;
   font-size: 36px;
@@ -360,6 +392,22 @@ body {
 /* FOOTER END */
 
 /* PROJECTS */
+
+.projects-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-list-wrapper {
+  padding: 20px 25px;
+}
+
+.projects-list {
+  display: flex;
+  flex-basis: (100%\3 -30px);
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
 
 .projects-title {
   font-weight: bold;
