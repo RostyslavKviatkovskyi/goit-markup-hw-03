@@ -8,11 +8,8 @@
   --text-color: #757575;
   --background-team: #f5f4fa;
   --logo-item-header: #000000;
-  --margin-top: 95px;
-  --margin-bottom: 95px;
-  --margin-bottom-headers-buttons: 50px;
-  --padding-top: 95px;
-  --padding-bottom: 95px;
+  --padding-top: 94px;
+  --padding-bottom: 94px;
 }
 
 h1,
@@ -122,6 +119,7 @@ body {
 /* BUTTONS END */
 
 /* HEADER */
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -218,19 +216,9 @@ body {
 
 /* ADVANTAGES */
 
-.advantages .container {
-  margin-top: var(--margin-top);
-  margin-bottom: var(--margin-bottom);
-}
-
-.advantages-item {
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.advantages-list {
-  display: flex;
-  flex-basis: calc(100%\4 -30px);
+.advantages {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
 }
 
 .advantages-title {
@@ -253,10 +241,11 @@ body {
 
 /* OCCUPATION */
 
-.occupation .container {
+.occupation-list {
+  display: flex;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: var(--margin-bottom);
+  flex-basis: calc(100% / 3 -30px);
 }
 
 .occupation-item {
@@ -264,9 +253,8 @@ body {
   margin-top: 30px;
 }
 
-.occupation-list {
-  display: flex;
-  flex-basis: (100%\3 -30px);
+.occupation .occupation-title {
+  margin-bottom: 50px;
 }
 
 .occupation-title {
@@ -285,27 +273,6 @@ body {
 
 .team {
   background-color: var(--background-team);
-}
-
-.team-list-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-.team .container {
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.team-list-item {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.team-list {
-  display: flex;
-  flex-basis: (100%\4 -30px);
 }
 
 .team-title {
