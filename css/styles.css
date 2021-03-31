@@ -371,8 +371,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-top: 25px;
-  padding-bottom: 24px;
 }
 
 .logo {
